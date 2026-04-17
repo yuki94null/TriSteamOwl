@@ -1,1 +1,3 @@
-execute if score @s yrh.011.deathcount matches 1.. run function yrh.011:death
+# それぞれ中
+    execute if entity @s[tag=yrh.011.reload.while] run function yrh.011:items/tristeamowl/reload/while
+    execute if entity @s[tag=yrh.011.recharge.while] run function yrh.011:items/tristeamowl/recharge/while

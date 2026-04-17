@@ -1,0 +1,22 @@
+{
+    "values": [
+        {"required": false,"id": "experience_bottle"},
+        {"required": false,"id": "experience_orb"},
+        {"required": false,"id": "item"},
+        {"required": false,"id": "item_display"},
+        {"required": false,"id": "block_display"},
+        {"required": false,"id": "text_display"},
+        {"required": false,"id": "#impact_projectiles"},
+        {"required": false,"id": "splash_potion"},
+        {"required": false,"id": "lingering_potion"},
+        {"required": false,"id": "minecart"},
+        {"required": false,"id": "hopper_minecart"},
+        {"required": false,"id": "chest_minecart"},
+        {"required": false,"id": "command_block_minecart"},
+        {"required": false,"id": "spawner_minecart"},
+        {"required": false,"id": "furnace_minecart"},
+        {"required": false,"id": "#boat"},
+        {"required": false,"id": "chest"}
+        
+    ]
+}

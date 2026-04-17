@@ -27,6 +27,7 @@
                                             "time": 3
                                         },
                                         "bullets":{
+                                            "lava": 0,
                                             "currentShoot": "none",
                                             "magazine": 0,
                                             "chamber": {
@@ -34,7 +35,9 @@
                                                 "left": false,
                                                 "right": false
                                             }
-                                        }
+                                        },
+                                        "reload": 0,
+                                        "recharge": 0
                                     }
                                 },
                                 "item_model": "spyglass",
