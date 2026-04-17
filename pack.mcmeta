@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Steam Power 3 burst Rifle",
+    "min_format": [
+      101,
+      1
+    ],
+    "max_format": 101
+  }
+}

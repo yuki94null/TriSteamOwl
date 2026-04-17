@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "" : {
+            "trigger": "using_item"
+        }
+    },
+    "rewards": {
+        "function": "yrh.011:items/rightclick"
+    }
+
+}

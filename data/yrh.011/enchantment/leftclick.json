@@ -1,0 +1,30 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "translate": "Left click detected!"
+    },
+    "effects": {
+        "minecraft:post_piercing_attack": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "yrh.011:items/leftclick"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 100,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": [],
+    "weight": 1
+}

@@ -1,0 +1,1 @@
+execute if score @s yrh.011.deathcount matches 1.. run function yrh.011:death
