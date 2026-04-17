@@ -1,5 +1,4 @@
-say left
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{yrh.011:{item:"tristeamowl"}}] run return run say tri
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{yrh.011:{item:"tristeamowl"}}] run return run function yrh.011:items/tristeamowl/reload
 
 # マクロっていうのは、
 # 任意の文字列をコマンドの中で使えるっていう機能です

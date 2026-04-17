@@ -20,15 +20,14 @@
 # }
 # }
 
-# アイテムデータいじるようのアイテム出す
-    summon item ~ ~-100000 ~ {Tags:[yrh.011.shoot.Tmp],Item:{id:"stone"}}
-
-
 # デクリメント と スコア代入
     execute store result score $burstTime yrh.011.global store result storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".burst.time int 0.9999 run data get storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".burst.time 1.0
 
 # 撃つ
     execute if score $burstTime yrh.011.global matches ..1 run function yrh.011:items/tristeamowl/shoot
+
+# アイテムデータいじるようのアイテム出す
+    summon item ~ ~-100000 ~ {Tags:[yrh.011.shoot.Tmp],Item:{id:"stone"}}
 
 # データセット
     data modify entity @n[tag=yrh.011.shoot.Tmp] Item set from storage yrh.011:global Item

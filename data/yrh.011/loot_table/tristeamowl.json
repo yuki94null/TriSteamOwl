@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "shield",
+                    "name": "command_block",
                     "functions": [
                         {
                             "function": "set_components",
