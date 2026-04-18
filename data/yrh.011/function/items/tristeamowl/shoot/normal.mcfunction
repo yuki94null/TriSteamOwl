@@ -11,7 +11,7 @@
     playsound item.firecharge.use player @a ~ ~ ~ 0.25 2.0
 
 # ダメージ
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=-1.0,dy=-1.0,dz=-1.0,tag=!yrh.011.shoot.attacker] if data entity @s Brain run damage @s 6.0 player_attack by @p[tag=yrh.011.shoot.attacker]
+    execute positioned ~-0.125 ~-0.125 ~-0.125 as @e[dx=0.125,dy=0.125,dz=0.125,tag=!yrh.011.shoot.attacker] if data entity @s Brain run damage @s 1.5 yrh.011:normal_shot by @p[tag=yrh.011.shoot.attacker]
 
 # 停止条件
     execute unless block ~ ~ ~ air run return run particle smoke ~ ~ ~ 0.0 0.0 0.0 1.0 1 normal @a

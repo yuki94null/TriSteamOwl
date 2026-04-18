@@ -8,7 +8,7 @@
     execute if data storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".bullets{lava:0} run return run playsound block.fire.extinguish player @a ~ ~ ~ 1.0 2.0
 
 # それはそうとチャンバーに弾がなければリターン
-    execute if data storage yrh.011:global chamber{left:false} run return run playsound ui.button.click player @a ~ ~ ~ 1.0 2.0
+    execute if data storage yrh.011:global chamber{left:false} run return run playsound ui.button.click player @a ~ ~ ~ 1.0 1.2
 
 #　射撃
     execute anchored eyes positioned ^0.35 ^-0.35 ^ run function yrh.011:items/tristeamowl/shoot/normal
