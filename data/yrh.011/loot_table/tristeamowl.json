@@ -10,14 +10,14 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "max_stack_size": 1,
                                 "!equippable": {},
-                                "blocks_attacks": {
-                                    "damage_reductions": [
-                                        {
-                                            "base": 0,
-                                            "factor": 0
-                                        }
-                                    ]
+                                "consumable":{
+                                    "consume_seconds": 999999999999999999999999999999999999,
+                                    "animation": "spyglass",
+                                    "has_consume_particles": false,
+                                    "on_consume_effects": [],
+                                    "sound": "intentionally_empty"
                                 },
                                 "unbreakable": {},
                                 "custom_data": {
@@ -27,7 +27,7 @@
                                             "time": 3
                                         },
                                         "bullets":{
-                                            "lava": 0,
+                                            "lava": "0",
                                             "currentShoot": "none",
                                             "magazine": 0,
                                             "chamber": {
@@ -40,7 +40,7 @@
                                         "recharge": 0
                                     }
                                 },
-                                "item_model": "spyglass",
+                                "item_model": "yrh.011:tristeamowl",
                                 "item_name": [
                                     {
                                         "translate": "tristeamowl"
@@ -92,6 +92,16 @@
                                             "type": "hidden"
                                         },
                                         "slot": "mainhand"
+                                    },
+                                    {
+                                        "id": "yrh.011:weapon",
+                                        "amount": -1.0,
+                                        "operation": "add_multiplied_total",
+                                        "type": "block_interaction_range",
+                                        "display": {
+                                            "type": "hidden"
+                                        },
+                                        "slot": "hand"
                                     }
                                 ]
                             }
