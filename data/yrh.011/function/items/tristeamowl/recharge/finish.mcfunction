@@ -1,4 +1,8 @@
-say recharge finished
+# タイトル
+    title @s actionbar [{text:":[",color:gold},{text:"Recharge Complete",color:white},{text:"]:",color:gold}]
+# 音
+    playsound entity.experience_orb.pickup player @a ~ ~ ~ 1.0 2.0 0.0
+
 # マグマバケツをバケツに置き換え
     clear @s lava_bucket 1
     summon item ~ ~ ~ {Item:{id:"bucket",count:1}}

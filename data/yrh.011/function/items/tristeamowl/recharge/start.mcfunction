@@ -2,18 +2,21 @@
     data modify storage yrh.011:global Item set from entity @s SelectedItem
 
 # lavaの値でやめさせる
-#  スコアに代入
-    execute store result score $Lava yrh.011.global run data get storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".bullets.lava
-    execute store result score $LavaLimit yrh.011.global run data get storage yrh.011:global lavaLimit
+    # スコアに代入
+        execute store result score $Lava yrh.011.global run data get storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".bullets.lava
+        execute store result score $LavaLimit yrh.011.global run data get storage yrh.011:global lavaLimit
 
-#  やめさせるところ
-    execute if score $Lava yrh.011.global >= $LavaLimit yrh.011.global run return run say らばまっくすやで～
+    # やめさせるところ
+        execute if score $Lava yrh.011.global >= $LavaLimit yrh.011.global run return run function yrh.011:items/tristeamowl/recharge/fail_max
 
 # 溶岩バケツ持ってなければ無理
-#  溶岩バケツの数を取得
-    execute store result score $LavaCount yrh.011.global run clear @s lava_bucket 0
-#  無理
-    execute if score $LavaCount yrh.011.global matches 0 run return run say もってへんやん
+    # 溶岩バケツの数を取得
+        execute store result score $LavaCount yrh.011.global run clear @s lava_bucket 0
+    # 無理
+        execute if score $LavaCount yrh.011.global matches 0 run return run function yrh.011:items/tristeamowl/recharge/fail_noitem
+
+# 音
+    playsound entity.experience_orb.pickup player @a ~ ~ ~ 1.0 1.0 0.0
 
 # データをセット
     data modify storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".recharge set from storage yrh.011:global rechargeTime

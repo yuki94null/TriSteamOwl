@@ -1,0 +1,1 @@
+$title @s actionbar [{text:":[",color:gold},{text:"$(text) Progression",color:white},{text:"]:",color:gold},{text:" $(Space)$(Percent)%",color:white},{text:" :[",color:gold},{color:white,text:"$(0)$(5)$(10)$(15)$(20)$(25)$(30)$(35)$(40)$(45)$(50)$(55)$(60)$(65)$(70)$(75)$(80)$(85)$(90)$(95)$(100)"},{text:"]:",color:gold}]

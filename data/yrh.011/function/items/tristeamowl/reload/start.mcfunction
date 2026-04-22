@@ -2,12 +2,12 @@
     data modify storage yrh.011:global Item set from entity @s SelectedItem
 
 # マガジンがマックスなら無理
-#  スコアに代入
-    execute store result score $MagazineSize yrh.011.global run data get storage yrh.011:global magazineSize
-    execute store result score $Magazine yrh.011.global run data get storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".bullets.magazine
+    # スコアに代入
+        execute store result score $MagazineSize yrh.011.global run data get storage yrh.011:global magazineSize
+        execute store result score $Magazine yrh.011.global run data get storage yrh.011:global Item.components."minecraft:custom_data"."yrh.011".bullets.magazine
 
-#  無理
-    execute if score $Magazine yrh.011.global >= $MagazineSize yrh.011.global run return run say まがじんまっくすやで～
+    # 無理
+        execute if score $Magazine yrh.011.global >= $MagazineSize yrh.011.global run return run function yrh.011:items/tristeamowl/reload/fail_max
 
 # 音
     playsound entity.experience_orb.pickup player @a ~ ~ ~ 1.0 1.0 0.0
