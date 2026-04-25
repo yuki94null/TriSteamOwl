@@ -29,3 +29,15 @@
 
 # リロード中タグ
     tag @s add yrh.011.reload.while
+
+# 終了時演出
+    # タグ外し
+        tag @s remove yrh.011.recharge.finish
+        tag @s remove yrh.011.recharge.max
+        tag @s remove yrh.011.reload.max
+        tag @s remove yrh.011.fail.noitem
+        tag @s remove yrh.011.recharge.fail
+        tag @s remove yrh.011.reload.fail
+
+    # スコアリセット
+        scoreboard players reset @s yrh.011.global

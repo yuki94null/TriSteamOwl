@@ -3,6 +3,7 @@
 
 # score
     scoreboard objectives add yrh.011.global dummy
+    scoreboard players set #16 yrh.011.global 16
 
 # data
     execute unless data storage yrh.011:global burstTime run data merge storage yrh.011:global {burstTime:2}

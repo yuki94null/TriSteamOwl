@@ -1,0 +1,147 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCD",
+        "ADE"
+    ],
+    "key": {
+        "A": "#minecraft:logs",
+        "B": "copper_ingot",
+        "C": "clock",
+        "D": "water_bucket",
+        "E": "barrel"
+    },
+    "category": "equipment",
+    "show_notification": true,
+    "result": {
+        "id": "command_block",
+        "count": 1,
+        "components": {
+            "tooltip_display": {
+                "hidden_components": [
+                    "enchantments"
+                ]
+            },
+            "max_stack_size": 1,
+            "!equippable": {},
+            "consumable": {
+                "consume_seconds": 999999999999999999999999999999999999,
+                "animation": "spyglass",
+                "has_consume_particles": false,
+                "on_consume_effects": [],
+                "sound": "intentionally_empty"
+            },
+            "unbreakable": {},
+            "custom_data": {
+                "yrh.011": {
+                    "item": "tristeamowl",
+                    "burst": {
+                        "time": 3
+                    },
+                    "bullets": {
+                        "lava": "0",
+                        "currentShoot": "none",
+                        "magazine": 0,
+                        "chamber": {
+                            "main": false,
+                            "left": false,
+                            "right": false
+                        }
+                    },
+                    "reload": 0,
+                    "recharge": 0
+                }
+            },
+            "item_model": "yrh.011:tristeamowl",
+            "item_name": [
+                {
+                    "translate": "yrh.011.item.tristeamowl.name",
+                    "color": "gold",
+                    "italic": false
+                }
+            ],
+            "lore": [
+                {
+                    "translate": "yrh.011.item.tristeamowl.lore.0",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "translate": "yrh.011.item.tristeamowl.lore.1",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "translate": "yrh.011.item.tristeamowl.lore.2",
+                    "color": "red",
+                    "italic": true,
+                    "with": [
+                        {
+                            "keybind": "key.sneak"
+                        },
+                        {
+                            "text": " + "
+                        },
+                        {
+                            "keybind": "key.attack"
+                        }
+                    ]
+                }
+            ],
+            "enchantments": {
+                "yrh.011:leftclick": 1
+            },
+            "enchantment_glint_override": false,
+            "piercing_weapon": {
+                "deals_knockback": false,
+                "dismounts": false,
+                "hit_sound": "intentionally_empty",
+                "sound": "intentionally_empty"
+            },
+            "swing_animation": {
+                "type": "none"
+            },
+            "attack_range": {
+                "max_reach": 0.0,
+                "min_reach": 0.0,
+                "max_creative_reach": 0.0,
+                "min_creative_reach": 0.0,
+                "mob_factor": 0.0,
+                "hitbox_margin": 1.0
+            },
+            "attribute_modifiers": [
+                {
+                    "id": "yrh.011:weapon",
+                    "amount": -1.0,
+                    "operation": "add_multiplied_total",
+                    "type": "entity_interaction_range",
+                    "display": {
+                        "type": "hidden"
+                    },
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "yrh.011:weapon",
+                    "amount": -1.0,
+                    "operation": "add_multiplied_total",
+                    "type": "attack_damage",
+                    "display": {
+                        "type": "hidden"
+                    },
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "yrh.011:weapon",
+                    "amount": -1.0,
+                    "operation": "add_multiplied_total",
+                    "type": "block_interaction_range",
+                    "display": {
+                        "type": "hidden"
+                    },
+                    "slot": "hand"
+                }
+            ]
+        }
+    }
+}

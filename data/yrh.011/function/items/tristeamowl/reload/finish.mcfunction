@@ -1,5 +1,9 @@
-# タイトル
-    title @s actionbar [{text:":[",color:gold},{text:"Reload Complete",color:white},{text:"]:",color:gold}]
+# タグ付け
+    tag @s add yrh.011.reload.finish
+# リセット
+    scoreboard players reset @s yrh.011.global
+# ui
+    function yrh.011:items/tristeamowl/ui/finish
 
 # 音
     playsound entity.experience_orb.pickup player @a ~ ~ ~ 1.0 2.0 0.0
@@ -42,3 +46,4 @@
 
 # タグを消す
     tag @s remove yrh.011.reload.while
+

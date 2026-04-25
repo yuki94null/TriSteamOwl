@@ -10,6 +10,11 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "enchantments"
+                                    ]
+                                },
                                 "max_stack_size": 1,
                                 "!equippable": {},
                                 "consumable":{
@@ -43,12 +48,37 @@
                                 "item_model": "yrh.011:tristeamowl",
                                 "item_name": [
                                     {
-                                        "translate": "tristeamowl"
+                                        "translate": "yrh.011.item.tristeamowl.name",
+                                        "color": "gold",
+                                        "italic": false
                                     }
                                 ],
                                 "lore": [
                                     {
-                                        "translate": "tristeamowl"
+                                        "translate": "yrh.011.item.tristeamowl.lore.0",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "yrh.011.item.tristeamowl.lore.1",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "yrh.011.item.tristeamowl.lore.2",
+                                        "color": "red",
+                                        "italic": true,
+                                        "with":[
+                                            {
+                                                "keybind": "key.sneak"
+                                            },
+                                            {
+                                                "text": " + "
+                                            },
+                                            {
+                                                "keybind": "key.attack"
+                                            }
+                                        ]
                                     }
                                 ],
                                 "enchantments": {

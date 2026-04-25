@@ -1,6 +1,6 @@
 {
     "exhaustion": 0,
-    "message_id": "yrh.011.damage.strong_shot",
+    "message_id": "yrh.011.strong_shot",
     "scaling": "never",
     "death_message_type": "default",
     "effects": "hurt"
